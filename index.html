@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Family Tree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="container" id="slider">
+
+        <!-- PAGE 1 -->
+        <div class="page">
+            <h2>Family Tree</h2>
+            <div id="tree"></div>
+            <button onclick="goToPage(1)">Next →</button>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="page">
+        <svg id="tree2"></svg>
+        <button onclick="goToPage(0)">← Back</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

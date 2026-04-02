@@ -1,0 +1,126 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(to right, #eef2f3, #ffffff);
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* SLIDER */
+.container {
+    display: flex;
+    width: 200vw;
+    height: 100vh;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* PAGE */
+.page {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* HEADINGS */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* TREE AREA */
+#tree, #tree2 {
+    width: 100%;
+    height: 85vh;
+    min-height: 600px;
+    overflow: visible;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 22px;
+    border: none;
+    background: linear-gradient(45deg, #4a90e2, #357abd);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ================= TREE NODES ================= */
+
+/* Page 1 nodes */
+.node rect {
+    fill: #ffffff;
+    stroke: #4a90e2;
+    stroke-width: 2px;
+    rx: 12;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.15));
+    transition: 0.3s;
+}
+
+.node:hover rect {
+    fill: #e3f2fd;
+    transform: scale(1.05);
+}
+
+/* Text */
+.node text {
+    font-size: 12px;
+    font-weight: 600;
+    fill: #2c3e50;
+}
+
+/* Links */
+.link {
+    fill: none;
+    stroke: #90a4ae;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
+
+/* ================= PAGE 2 SPECIAL ================= */
+
+/* Couple highlight */
+.couple rect {
+    fill: #fff3cd;
+    stroke: #f39c12;
+    stroke-width: 2px;
+}
+
+/* Children */
+.child rect {
+    fill: #e8f5e9;
+    stroke: #43a047;
+}
+
+/* Lines */
+.line-main {
+    stroke: #8e44ad;
+    stroke-width: 3px;
+}
+
+.line-branch {
+    stroke: #8e44ad;
+    stroke-width: 2px;
+}
+
+/* Smooth text */
+text {
+    font-family: 'Segoe UI', sans-serif;
+}
